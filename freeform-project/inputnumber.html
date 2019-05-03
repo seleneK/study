@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>테스트</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+
+<body>
+	<button id="Btn1">더하기</button>
+	<button id="Btn2">빼기</button>
+	<input type="text" id="numNext" value="1">
+
+<script>
+	//Y++; 와 Y++ 의 차이점 알기, 연산자
+	//alert(Y);
+
+	var x = document.getElementById("Btn1");
+	var a = document.getElementById("Btn2");
+
+	x.onclick = function() {
+	  var Y = document.getElementById("numNext").value;
+	  document.getElementById("numNext").value = ++Y;
+	};
+
+	a.onclick = function() {
+	  var Y = document.getElementById("numNext").value;
+	  document.getElementById("numNext").value = --Y;
+	};
+</script>
+
+</body>
+</html>
