@@ -2,32 +2,37 @@
 <html lang="ko">
 <head>
 	<meta charset="utf-8">
-	<title>테스트</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<title>inputNumber</title>
 </head>
-
 <body>
-	<button id="Btn1">더하기</button>
-	<button id="Btn2">빼기</button>
-	<input type="text" id="numNext" value="1">
+<div class="inpbox">
+	<button id="plusBtn">더하기</button>
+	<button id="minesBtn">빼기</button>
+	<input type="text" id="inputNumber" value="">
+</div>
 
 <script>
-	//Y++; 와 Y++ 의 차이점 알기, 연산자
-	//alert(Y);
+	var plusBtn = document.getElementById("plusBtn");
+	var minesBtn = document.getElementById("minesBtn");
+	var inputNumber = document.getElementById("inputNumber");
+	var countNumber = 1;
+	inputNumber.value = countNumber;
 
-	var x = document.getElementById("Btn1");
-	var a = document.getElementById("Btn2");
-
-	x.onclick = function() {
-	  var Y = document.getElementById("numNext").value;
-	  document.getElementById("numNext").value = ++Y;
+	//1씩 증가
+	function plusecount(){
+		countNumber++;
+		inputNumber.value = countNumber;
 	};
 
-	a.onclick = function() {
-	  var Y = document.getElementById("numNext").value;
-	  document.getElementById("numNext").value = --Y;
+	//1씩 감소
+	function minescount(){
+		countNumber--;
+		inputNumber.value = countNumber;
 	};
+
+	//버튼 클릭시 제어
+	plusBtn.addEventListener("click", plusecount);
+	minesBtn.addEventListener("click", minescount);
 </script>
-
 </body>
 </html>
