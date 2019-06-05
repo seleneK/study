@@ -5,11 +5,10 @@
     <title>stringLength</title>
 </head>
 <body>
-
 <div class="inpbox">
     <textarea id="inpString" cols="90" rows="5" title="한줄 토크를 달아주세요">캡틴아메리카엔드게임</textarea>
     <button id="txtOutBtn">글자 길이</button>
-    <p >입력된 글자수 : <em id="txtOutString"></em></p>
+    <p>입력된 글자수 : <em id="txtOutString"></em></p>
 </div>
 
 <script>
@@ -26,9 +25,9 @@
     function textcount() {
         var textValue = inpString.value;
         txtOutString.innerHTML = textValue.length;
-    }
+    };
 
-    txtOutBtn.addEventListener('click', textcount);;
+    txtOutBtn.addEventListener('click', textcount);
 </script>
 </body>
 </html>
