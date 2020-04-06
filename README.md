@@ -16,15 +16,11 @@ W3C : [https://www.w3.org](https://www.w3.org/)
 
 W3Schools : [https://www.w3schools.com](https://www.w3schools.com/)
 
-{% tabs %}
-{% tab title="HTML and CSS" %}
+htmlcss
 * [https://css-tricks.com](https://css-tricks.com/)
 * [https://html.com](https://html.com/)
-{% endtab %}
 
-{% tab title="JavaScript" %}
 기초 공부 할수 있는 
-
 * Hello, JavaScript! 
   * [https://programmers.co.kr/learn/courses/3](https://programmers.co.kr/learn/courses/3) 
 * 자바스크립트와 웹 프론트엔드
@@ -34,14 +30,3 @@ W3Schools : [https://www.w3schools.com](https://www.w3schools.com/)
 * JavaScript 간단한 문법 실습
   * [https://www.w3schools.com/js/default.asp](https://www.w3schools.com/js/default.asp)
   * [https://www.w3schools.com/js/exercise\_js.asp](https://www.w3schools.com/js/exercise_js.asp)
-{% endtab %}
-{% endtabs %}
-
-
-
-
-
-
-
-
-
